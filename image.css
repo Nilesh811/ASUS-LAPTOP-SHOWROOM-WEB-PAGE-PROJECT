@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    position: relative;
+}
+
+.header .logo {
+    height: 40px;
+}
+
+.header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 24px;
+}
+
+.hero {
+    background-image: url(./img/asus-rog-3840x2160-11677.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+
+}
+
+.hero h1 {
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.intro {
+    padding: 50px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.pro {
+    background: url('./asus-rog-3840x2160-11677.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    color: white;
+    position: relative;
+}
+
+.pro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.pro-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.pro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.pro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.pro button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #c96c6c;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.pro button:hover {
+    background-color: #ac3030;
+}
+
+.asus-showroom {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.asus-showroom h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.laptop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.laptop-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.laptop-card:hover {
+    transform: translateY(-5px);
+}
+
+.laptop-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.laptop-card h3 {
+    font-size: 1.5em;
+    color: #0070c0;
+    margin-bottom: 10px;
+}
+
+.laptop-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.laptop-card ul li {
+    margin: 8px 0;
+    font-size: 0.95em;
+    color: #555;
+}
